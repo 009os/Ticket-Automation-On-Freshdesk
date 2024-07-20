@@ -1,0 +1,35 @@
+1.) Create a new directory for your project and navigate into it:
+
+mkdir freshdesk-tickets
+cd freshdesk-tickets
+
+2.)Initialize Your Project:
+Initialize a new Node.js project:
+
+npm init -y
+
+3)Install Dependencies:
+Install the necessary dependencies including axios and dotenv:
+
+npm install axios dotenv
+
+4)Install TypeScript:
+Install TypeScript and its related packages:
+
+npm install typescript ts-node @types/node @types/axios
+
+5)Create a TypeScript Configuration File:
+Initialize a TypeScript configuration file:
+
+npx tsc --init
+
+6)Create Your Environment Variables File:
+Create a .env file in the root of your project and add your environment variables:
+
+echo "FRESHDESK_DOMAIN= `YOUR DOMAIN`" >> .env
+echo "FRESHDESK_API_KEY=`YOUR API`" >> .env
+
+7)Run Your TypeScript File:
+To execute your TypeScript file, use ts-node:
+
+npx ts-node index.ts
